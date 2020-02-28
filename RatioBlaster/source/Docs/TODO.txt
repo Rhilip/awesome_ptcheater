@@ -1,0 +1,53 @@
+--------------------
+rm2 Readme
+--------------------
+
+RMTAB: memory reader, loading bar stays there - FIXED
+RMTAB: Client simulation, more clients? - FIXED
+up/downspeed too detailed eg 34.5364787kB/s - FIXED
+comment doesn't display right eg comment ...                brought to. - FIXED
+it's not possible to make window bigger to see all the details - FIXED now things are more resizabal
+right click torrent -->  speeds after entering, maybe confirm with "enter-key" first? - FIXED
+after editing speeds kB/s is missing - FIXED
+"stop after" is missing after torrent started
+maybe make it possible to reopen actual RMTAB? (stop after, tcp, get seeder..when less than
+
+..leecher
+"error loading confing" on new RM - FIXED
+tooltip necessary? information useful? - This is OPTIONAL now... disabled by defult...
+update interval not visible - FIXED
+CRASHED when adding 3 torrent! (RM encountered a problem)
+make possible to change name, show tracker? - FIXED
+remaining needed?
+randomizing does NOT work! - ???
+
+* Implement Ques
+* Make sure RB uses the same randomly genrated peer id etc etc on every torrent in the same tracker -DONE
+* fix the randomizing bug on form1's startup
+
+-----------------------------
+TODO :
++ Added drag and drop torrent to the main RB list, need to check why is there randomising in Form_Load ???
+
++ Removed versionChecker file from RM, Added version checker to RB, need to finalize.
+	Added variable internalVersion to Programs.cs . This will be used for comparison with version on moofdev server.
+	
++ Added general log  tab .Function AddLogLine inside clsFMain.cs
+	use - Program.mainUI.AddLogLine("blbala");
+	
++ Fixed useDNS function, for some reason it wasnt used in RB. Its important to calculate localip for Azureus emulation and maybe others .
+ This function was changed to getLocalIp and moved to clsFmain from Rm.
+
+- Need to add dialog with global RB options such as : checkbox for Check New Version and so on.	: done, phis
+
+- Need to change and cleanup 'About Dialog'. Need to remove license stuff (this is what readme for).
+ Plus needs to put links to moofdev forum and help page,proxy help page aqnd contact information as was in 1.7.5 .
+ 
+- Need to do clear button per log or right click menu to remove log messages.Right click even better.
+
+- Need to add "Properties" submenu to right click on listview.It should open RM with first torrent details .
+  This way user should be able to change options while torrent is running : such as proxy settings, tcp listener, scrape and so on.
+
+- saving of main window size, position and size of columns
+
+- good to have selectable and configurable columns . Low Priority.

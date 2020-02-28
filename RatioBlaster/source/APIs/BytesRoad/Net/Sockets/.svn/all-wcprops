@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets
+END
+ATYP.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/ATYP.cs
+END
+Socket_Socks4.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/Socket_Socks4.cs
+END
+OpState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/OpState.cs
+END
+Socket_Socks5.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/Socket_Socks5.cs
+END
+Socket_Socks4a.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/Socket_Socks4a.cs
+END
+ProxyType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/ProxyType.cs
+END
+SocketBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/SocketBase.cs
+END
+SocketEx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/SocketEx.cs
+END
+ByteVector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/ByteVector.cs
+END
+IOp.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/IOp.cs
+END
+SockErrors.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/SockErrors.cs
+END
+Socket_HttpConnect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/Socket_HttpConnect.cs
+END
+AuthMethod.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/AuthMethod.cs
+END
+NetworkStreamEx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/NetworkStreamEx.cs
+END
+Socket_None.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2/trunk/%20ratiomaster2/APIs/BytesRoad/Net/Sockets/Socket_None.cs
+END

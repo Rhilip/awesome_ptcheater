@@ -1,0 +1,58 @@
+
+
+How it works :
+-----------
+This program works as a proxy between torrent client and tracker.It receives announce message from
+client and changes it on the fly,by modifying uploaded value by multiplying on specified value.
+For example,if uTorrent reports to the server that it have uploaded 1 Mb,and you have choosen multiplier
+of 2, Torrent Proxy will report to the tracker 2Mb of upload. Torrent proxy supports multiple torrents and even multiple clients in the same time. As soon as it recognises announce string,it will 
+process it and change it on the fly.
+
+
+Requirements and configuration:
+-----------
+1.You must have .NET 2.0 installed on your machine .Download it from Microsoft site (about 30Mb).
+2.You client must have support for proxying announce params to the tracker.uTorrent and Azureus support
+this feature.
+3.Configure your client .Here are instructions for uTorrent 1.6:
+	a)go to Menu Options/Preferences...
+	b)In Preferences window go to Connections 
+	c)in Proxy server options you must set following values :
+	Type : HTTP, Proxy : 127.0.0.1, Port : 8889
+Thats all.
+
+
+Features and howto :
+------------
+Torrent Proxy 1.0 supports two modes, manual and automatic (Manual Mode checkbox).
+In both modes dont forget to configure Upload Multiplier, at default value (1),
+multiplies leaves announce command as it is.
+
+
+ Automatic mode (default)
+ -------------------
+In this mode Torrent Proxy will change all announce commands that it will get. 
+All you need to do is to configure Upload Multiplier. Set it to 2,3 or whatever you want.
+Start Leech/seed torrent in uTorrent or other torrent client of your choice.
+
+ Manual mode (default)
+ -------------------
+This mode allows you to control what torrents you want to use proxy with.
+When you enable Manual Mode checkbox,it will enable Torrent List box. Now you can drag and drop
+.torrent files into that box.If all goes well,you will see the torrent in the list.Only torrents that you 
+adding manually will be modified, all other torrents reports will be not changed. Thats the main 
+difference from automatic mode.
+Now start leech/seed torrent in your torrent client,and you will see how values in Upload(real) and Upload(reported) columns will change. Much nicer than manual mode,isnt it ?
+
+To close Torrent Proxy ,just click on X button, it will save configuration file in the same directory were 
+you put executable. It will be used next time you start Torrent Proxy.
+Note that you need to change Proxy server parameters back in your client,when you use it 
+without Torrent Proxy.
+
+[/Anleitung:]
+
+Hinweise:
+-
+
+Coder (sofern bekannt):
+(http://www.moovdef.org)

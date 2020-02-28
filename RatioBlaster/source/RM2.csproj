@@ -1,0 +1,198 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.20706</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38137F70-AE9F-411A-9A92-0B684670CE13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RatioBlaster</RootNamespace>
+    <AssemblyName>RatioBlaster</AssemblyName>
+    <ManifestCertificateThumbprint>D705D48CB589116FD981DF741678B0765E1F4FEE</ManifestCertificateThumbprint>
+    <ManifestKeyFile>RatioBlaster_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <PublishUrl>C:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NO_SKINNABLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NO_SKINNABLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIs\BitTorrent\BEncode.cs" />
+    <Compile Include="APIs\BitTorrent\BEncodeValue.cs" />
+    <Compile Include="APIs\BitTorrent\IncompleteTorrentData.cs" />
+    <Compile Include="APIs\BitTorrent\Piece.cs" />
+    <Compile Include="APIs\BitTorrent\Torrent.cs" />
+    <Compile Include="APIs\BitTorrent\TorrentException.cs" />
+    <Compile Include="APIs\BitTorrent\TorrentFile.cs" />
+    <Compile Include="APIs\BitTorrent\ValueDictionary.cs" />
+    <Compile Include="APIs\BitTorrent\ValueList.cs" />
+    <Compile Include="APIs\BitTorrent\ValueNumber.cs" />
+    <Compile Include="APIs\BitTorrent\ValueString.cs" />
+    <Compile Include="APIs\BytesRoad\Diag\NSTrace.cs" />
+    <Compile Include="APIs\BytesRoad\Diag\NSTraceListeners.cs" />
+    <Compile Include="APIs\BytesRoad\Diag\NSTraceOptions.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Advanced\AsyncBase.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Advanced\AsyncResultBase.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\ATYP.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\AuthMethod.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\ByteVector.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\IOp.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\NetworkStreamEx.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\OpState.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\ProxyType.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\SockErrors.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\SocketBase.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\SocketEx.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Socket_HttpConnect.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Socket_None.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Socket_Socks4.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Socket_Socks4a.cs" />
+    <Compile Include="APIs\BytesRoad\Net\Sockets\Socket_Socks5.cs" />
+    <Compile Include="rm2\Controllers\Logger.cs" />
+    <Compile Include="rm2\UI\AboutUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rm2\UI\AboutUI.Designer.cs">
+      <DependentUpon>AboutUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rm2\UI\MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rm2\UI\MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APIs\ProcessMemoryReaderLib\ProcessMemoryReader.cs" />
+    <Compile Include="APIs\ProcessMemoryReaderLib\ProcessMemoryReaderApi.cs" />
+    <Compile Include="rm2\MemReader.cs" />
+    <Compile Include="rm2\Controllers\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="rm2\UI\AboutUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rm2\UI\MainUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rm2\UI\OptionsUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rm2\UI\TorrerntSettingsUI.resx">
+      <DependentUpon>TorrerntSettingsUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Clients\Azureus_2502.client" />
+    <None Include="Clients\Azureus_3034.client" />
+    <None Include="Clients\utorrent_1.6.1_build_%28483%29.client" />
+    <None Include="Clients\utorrent_1.7.5_build_%284602%29.client" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rm2\Settings\clsRbSettings.cs" />
+    <Compile Include="rm2\VersionChecker.cs" />
+    <Compile Include="rm2\UI\OptionsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rm2\UI\OptionsUI.Designer.cs">
+      <DependentUpon>OptionsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rm2\Settings\ApplicationSettings.cs" />
+    <Compile Include="rm2\UI\TorrerntSettingsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rm2\BT\Peer.cs" />
+    <Compile Include="rm2\BT\PeerList.cs" />
+    <Compile Include="rm2\Helpers\ProxyInfo.cs" />
+    <Compile Include="rm2\Helpers\RandomStringGenerator.cs" />
+    <Compile Include="rm2\BT\TorrentClient.cs" />
+    <Compile Include="rm2\BT\TorrentClientsEnum.cs" />
+    <Compile Include="rm2\BT\TorrentInfo.cs" />
+    <Compile Include="rm2\BT\TrackerResponse.cs" />
+    <Compile Include="rm2\BT\TorrentSession.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

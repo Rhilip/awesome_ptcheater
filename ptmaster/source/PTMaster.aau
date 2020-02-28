@@ -1,0 +1,70 @@
+/*  
+ *  PTMaster.exe V1.0
+ *  本软件修改自PTLiar V2.0.11, 并参阅部分RatioMaster的源代码，感谢原作者。
+ *  本软件遵守GNU General Public License, version 2
+ *  本软件仅供技术研究及测试网速，请于下载后24小时内删除，请勿用作非法用途。
+ */
+import win.ui;
+import win.ui.menu;
+import process;
+/*DSG{{*/
+winform = ..win.form( bottom=400;parent=...;text="PTMaster";right=295 )
+winform.add( 
+edit5={ bottom=294;text="uTorrent/3320(26726)";left=147;top=272;z=10;right=282;edge=1;cls="edit" };
+static6={ bottom=136;right=242;left=217;text="kb/s";top=120;transparent=1;z=13;cls="static" };
+checkbox2={ checked=1;bottom=105;text="启用反作弊侦查";left=57;top=83;z=2;right=167;cls="checkbox" };
+static5={ bottom=293;right=137;left=57;text="uTorrent版本";top=273;transparent=1;z=12;cls="static" };
+static3={ bottom=216;right=137;left=57;text="单种最大速度";top=196;transparent=1;z=8;cls="static" };
+edit3={ bottom=216;text="500";left=147;top=194;z=5;right=210;edge=1;cls="edit" };
+button={ bottom=377;text="配置完成
+开始运行";left=41;top=313;z=16;right=263;cls="button" };
+edit4={ bottom=255;text="12345";left=147;top=233;z=9;right=210;edge=1;cls="edit" };
+edit={ bottom=139;text="2000";left=147;top=117;z=3;right=210;edge=1;cls="edit" };
+static9={ bottom=27;right=240;left=65;text="本软件仅供技术研究及测试网速";top=8;transparent=1;z=17;cls="static" };
+static={ bottom=139;right=137;left=57;text="最大上传速度";top=119;transparent=1;z=6;cls="static" };
+static10={ bottom=47;right=267;left=39;text="请于下载后24小时内删除，勿作非法用途";top=28;transparent=1;z=18;cls="static" };
+static7={ bottom=175;right=242;left=217;text="kb/s";top=159;transparent=1;z=14;cls="static" };
+static4={ bottom=254;right=137;left=57;text="端口号";top=234;transparent=1;z=11;cls="static" };
+static2={ bottom=177;right=137;left=57;text="最大下载速度";top=157;transparent=1;z=7;cls="static" };
+checkbox={ bottom=74;text="启用ipv6";left=57;top=52;z=1;right=167;cls="checkbox" };
+static8={ bottom=214;right=242;left=217;text="kb/s";top=198;transparent=1;z=15;cls="static" };
+edit2={ bottom=178;text="2000";left=147;top=156;z=4;right=210;edge=1;cls="edit" }
+)
+/*}}*/
+
+winform.button.oncommand = function(id,event){
+	cmdline='';
+	if winform.checkbox.checked==1
+		cmdline=cmdline++' -e';
+	if winform.checkbox2.checked==1
+		cmdline=cmdline++' -z';
+	cmdline=cmdline++' -m '++winform.edit.text;
+	cmdline=cmdline++' -M '++winform.edit2.text;
+	cmdline=cmdline++' -s '++winform.edit3.text;
+	cmdline=cmdline++' -p '++winform.edit4.text;
+	cmdline=cmdline++' -c '++winform.edit5.text;
+	cmdline=string.trimleft(cmdline);
+	
+	res=(win.msgbox('请确认参数无误\n'++cmdline,"PTMaster" , 0x4| 0x20) )
+	
+    if(res=6){
+		process.execute("\FakeTorrent.exe",cmdline);
+		winform.close();
+    }
+    else{
+    	win.msgbox("请重新设置","PTMaster");
+    }
+
+}
+
+
+winform.popmenu = win.ui.popmenu(winform);
+winform.popmenu.add('作者:wujiajie');
+winform.popmenu.add();
+winform.popmenu.add('&退出',function(id){ winform.close() })
+var menu = win.ui.menu(winform);
+menu.add('菜单',winform.popmenu);
+
+
+winform.show() 
+win.loopMessage(); 

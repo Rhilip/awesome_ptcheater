@@ -1,0 +1,9 @@
+[submodule "Joal-Server/source"]
+	path = Joal-Server/source
+	url = https://github.com/anthonyraymond/joal.git
+[submodule "ptliar2/source"]
+	path = ptliar2/source
+	url = https://github.com/pantouyu/ptliar2.git
+[submodule "RatioMaster/source"]
+	path = RatioMaster/source
+	url = https://github.com/NikolayIT/RatioMaster.NET.git

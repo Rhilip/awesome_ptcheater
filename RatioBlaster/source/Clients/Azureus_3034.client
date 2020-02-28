@@ -1,0 +1,8 @@
+<client name="Azureus 3.0.3.4" author="TheKing" version="1.0" processname="azureus">
+  <query>info_hash={infohash}&amp;peer_id={peerid}&amp;supportcrypto=1&amp;port={port}&amp;azudp={port}&amp;uploaded={uploaded}&amp;downloaded={downloaded}&amp;left={left}&amp;corrupt=0{event}&amp;numwant={numwant}&amp;no_peer_id=1&amp;compact=1&amp;key={key}&amp;azver=3</query> 
+  <headers>User-Agent: Azureus 3.0.3.4;Windows XP;Java 1.6.0_03_nl_Connection: close_nl_Accept-Encoding: gzip_nl_Host: {host}_nl_Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2_nl_</headers>
+  <peer_id prefix="-AZ3034-" type="alphanumeric" length="12" urlencoding="false" upperCase="flase" value=""/>
+  <key type="alphanumeric" length="8" urlencoding="false" upperCase="false" value=""/>
+  <protocol value="HTTP/1.1"/>
+  <hash upperCase="true"/>
+</client>

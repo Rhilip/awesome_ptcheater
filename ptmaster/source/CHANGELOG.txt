@@ -1,0 +1,55 @@
+PTMaster v1.0   2012/06/11
+1. Support customed uTorrent version.
+2. Add UI. more friendly to beginners.
+
+======================PTLiar========================
+v2.0.11 2011/10/16
+1. put limit to speed per torrent(important)
+2. add client support: uTorrent/3000(25756)
+
+v2.0.10 2011/9/30
+fix bug, so that it works well on asiandvdclub.org
+
+v2.0.9 2011/9/16
+1. fix: ipv6 bug
+2. improve: better logging
+
+v2.0.8 2011/9/14
+1. support "scrape" (when using uTorrent3.0)
+2. fix redirection bugs
+3. add options "-f" (skipping sleeps)
+4. make py2exe happier
+
+v2.0.7 2011/9/12
+fix bug: cannot initialize downloading torrents
+
+v2.0.6 2011/9/7
+1. fix bug: repect client options
+2. removed -s option
+3. adjusted parameters
+4. code simplified
+5. compiled with python 2.6.4(compability for winxp)
+
+v2.0.5 2011/8/6
+1. handle 5xx response(retry)
+2. handle bad torrent format
+3. allow user to disable zero-rate(as default)
+
+v2.0.4 2011/7/21
+1. allow user to fake download
+2. allow user to add torrents at runtime
+
+v2.0.3 2011/7/17
+1. handle redirection 30x (anti-anti-cheat)
+2. smarter random strategy
+3. new schedulor
+4. fix some simulation problems, now sending the exactly same packet as those from utorrent
+
+v2.0.2(v2.02) 2011/7/12
+1. handle connection timeout
+2. detect number of connecting peers, if there is no peers uploaded size will not be increased
+3. provide support for https connection
+
+v2.0.1(v2.01) 2011/7/10
+1. supporting utorrent 2.2.1
+2. get ipv6 address from connection with ipv6.google.com
